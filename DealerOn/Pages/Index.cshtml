@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+</div>
+<Legend>Insert Shopping List</Legend>
+<form method="post">    
+    <textarea asp-for="input"></textarea>
+    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+</form>
+<Legend>Output</Legend>
+<p asp-for="Receipt">@Model.Receipt</p>
